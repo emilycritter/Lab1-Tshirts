@@ -1,5 +1,5 @@
 @import 'normalize';
-$border-size: 1px;
+$border-size: 2px;
 $theme-color: #5CA4D7;
 ul {
   list-style: none;
@@ -79,7 +79,7 @@ ul {
   }
 }
 .image-footer {
-  width: 214px;
+  width: 216px;
   ul {
     display: flex;
     flex-direction: row;
@@ -94,11 +94,11 @@ ul {
     border-left: 0;
     padding: 0;
     margin: 0 auto;
-    width: 42px;
+    width: 20%;
   }
   li:last-child {
     padding-right: 0;
-    border-right: white solid 1px;
+    border-right: white solid $border-size;
   }
   li:first-child {
     border-left: 0;
@@ -139,16 +139,16 @@ ul {
       border: $border-size solid $theme-color;
     }
     .shirtsizes {
-      top: -129px;
+      top: -131px;
     }
     .colorswatches {
-      top: -68px;
+      top: -70px;
     }
     .triangle {
       opacity: 0;
       transition: all 1s ease;
       position: absolute;
-      top: -2px;
+      top: -3px;
       left: 14px;
       z-index: 4;
       width: 0;
@@ -173,7 +173,7 @@ ul {
       opacity: 1;
     }
     &:last-child {
-      border-right: $theme-color solid 1px;
+      border-right: $theme-color solid $border-size;
     }
     .shirtsizes {
       transform: translateY(5px);
